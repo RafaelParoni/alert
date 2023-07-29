@@ -1,0 +1,122 @@
+/* Pag styles */
+
+body {
+    background-color: rgb(48, 47, 47);
+    margin: 0;
+    color: white;
+    display: flex;
+    justify-content: center;
+}
+#baixar {
+    position: absolute;
+    border-radius: 5px;
+    font-size: 25px;
+    cursor: pointer;
+    border: none;
+}
+#baixar:hover {
+    transition: 0.5s;
+    filter: invert(100%);
+}
+div{
+    margin-inline: 10px;
+    text-align: center;
+    border: 1px solid white;
+    border-radius: 5px;
+    padding: 15px;
+    margin-top: 50vh;
+}
+p {
+    cursor: default;
+    font-size: 25px;
+}
+p:hover {
+    transition: 1s;
+    color: red;
+    animation: rainbow;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-delay: 1s;
+}
+
+@keyframes rainbow {
+    0% {color: red;}
+    14% {color: orange;}
+    34% {color: yellow;}
+    51% {color: green;}
+    68% {color:aqua;}
+    85% {color:blue;}
+    95% {color: purple;}
+    100% {color: red;}
+}
+span {
+    cursor: pointer;
+    transform: translate(-50%, -50%);
+    background-color: red;
+    font-size: 25px;
+    border: 1px solid white;
+    border-radius: 5px;
+    padding: 5px;
+}
+span:hover {
+    transition: 0.5s;
+    filter: invert(100%);
+}
+
+
+/* Alert styles */ 
+
+.alert{
+    display: none;
+    width: 400px;
+    height: auto;
+    padding-bottom: 20px;
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.6);
+    top: -45vh;
+    left: 50%;
+    transform: translate(-50%);
+    border-radius: 15px;
+    color: white;
+    font-family: system-ui;
+    text-align: center;
+}
+.alert h1 {
+    color: #f12a23;
+    padding-bottom: 10px;
+    margin: 0;
+    border-bottom: 1px solid white;
+}
+.alert button {
+    border-radius: 5px;
+    padding: 15px;
+    margin-inline: 20px;
+    margin-top: 15px;
+}
+#confirm {
+    background-color: #00ff0d;
+}
+#no-confirm {
+    background-color: #f12a23;
+}
+.btnBack{
+    position: fixed;
+    bottom: 50px;
+    right: 15px;
+    width: 100px;
+    height: 100px;
+    background-color: #558BC4;
+    color: white;
+    border-radius: 15px;
+    font-size: 30px;
+    opacity: 0.2;
+    cursor: pointer;
+}
+.btnBack:hover {
+    transition: 0.5s;
+    opacity: 1;
+}
+.btnBack:focus {
+    transition: 0.5s;
+    opacity: 1;
+}
